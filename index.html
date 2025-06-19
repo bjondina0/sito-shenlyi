@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sito shenlyi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>ShenlyiStreams</title>
+  <style>
+    /* STILE GENERALE */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+      background-color: #ffebf0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #9146FF;
+    }
+
+    /* MENU HAMBURGER */
+    .hamburger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .hamburger-icon {
+      font-size: 30px;
+      cursor: pointer;
+      color: #ff00ff;
+    }
+
+    .menu-items {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+      display: none;
+      background-color: #1e1e1e;
+      border: 1px solid #ff00ff;
+      border-radius: 5px;
+      width: 200px;
+      position: absolute;
+    }
+
+    .menu-items li {
+      padding: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    .menu-items li:last-child {
+      border-bottom: none;
+    }
+
+    .menu-items li a {
+      color: #ff00ff;
+      text-decoration: none;
+    }
+
+    .menu-items li a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTENITORE BIO */
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .bio img {
+      max-width: 200px;
+      border-radius: 100px;
+    }
+
+    .bio h2 {
+      margin-top: 20px;
+    }
+
+    /* SEZIONI DEL SITO */
+    section {
+      padding: 100px 20px;
+      scroll-margin-top: 80px;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- MENU HAMBURGER -->
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+    <ul class="menu-items" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#stream">Stream</a></li>
+      <li><a href="#social">Social</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </div>
+
+  <!-- HEADER IN ALTO -->
+  <header>
+    <h1>ShenlyiStreams</h1>
+    <p>Live ogni giorno su Twitch 💜</p>
+  </header>
+    <!-- SEZIONE BIO -->
+  <section id="bio" style="background-color: #e0e0ff;">
+    <div class="container">
+      <div class="bio">
+        <img src="she.jpg" alt="Valy Avatar" />
+        <h2>Chi è Shenlyi?</h2>
+        <p>Shenly è una streamer variety che porta contenuti innovativi su qualsiasi game! Nata su League of Legends, cresciuta su GTA V RP!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE HOME -->
+  <section id="home" style="background-color: #f0f0f0;">
+    <h2>Home</h2>
+    <p>Benvenuto nel sito ufficiale di Shenlyi!</p>
+  </section>
+
+  <!-- SEZIONE STREAM -->
+  <section id="stream" style="background-color: #ffe0f0;">
+    <h2>Stream</h2>
+    <p>Segui le mie live ogni sera a partire dalle 18:00 su Twitch!</p>
+    <p>Contenuti: Just Chatting, Grand Theft auto V!</p>
+  </section>
+
+  <!-- SEZIONE SOCIAL -->
+  <section id="social" style="background-color: #f9f9f9;">
+    <h2>Seguimi sui social!</h2>
+    <p>Resta aggiornatə su tutte le novità:</p>
+    <div style="font-size: 20px;">
+      <a href="https://twitch.tv/tuonome" target="_blank" style="margin-right: 20px; color: #9146FF;">🎮 Twitch</a>
+      <a href="https://www.instagram.com/shenlyiy/" target="_blank" style="margin-right: 20px; color: #E1306C;">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@shenlyi" target="_blank" style="color: #000000;">🎵 TikTok</a>
+    </div>
+  </section>
+
+  <!-- SEZIONE CONTATTI -->
+  <section id="contatti" style="background-color: #d0fff0;">
+    <h2>Contattami</h2>
+    <form>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" placeholder="Il tuo nome"><br><br>
+
+      <label for="messaggio">Messaggio:</label><br>
+      <textarea id="messaggio" rows="4" placeholder="Scrivi un messaggio..."></textarea><br><br>
+
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+</body>
+</html>
+</body>
+</html>
